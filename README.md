@@ -1,16 +1,25 @@
-# Satış Hepsi
+# Satış Hepsi & Figürhane
 
-Satış Hepsi, Türkçe arayüzlü, mobil uyumlu bir demo e-ticaret vitrini projesidir.
+Bu depo iki ayrı Türkçe, mobil uyumlu mağaza vitrini içerir:
 
-## Özellikler
-- Duyarlı (responsive) mağaza arayüzü
-- Ürün arama ve kategori filtreleme
-- Sepete ürün ekleme, adet artırma/azaltma
-- Sepetin localStorage ile tarayıcıda saklanması
-- Örnek ürün kartları ve kampanya/bülten alanı
+- **Satış Hepsi:** Ana dizindeki `index.html` dosyasında.
+- **Figürhane:** `figur/index.html` adresinde; anime, oyun, film-dizi ve mini figür kategorileri ile özel figür talep akışı sunar.
+
+## Figürhane özellikleri
+- Ürün arama, kategori filtreleme ve fiyat sıralama
+- Ürün detay penceresi, favoriler ve sepet
+- Sepet/favori bilgisini tarayıcıda saklama
+- Sipariş özetini TXT dosyası olarak indirme
+- Özel figür talep formu ve isteğe bağlı referans görseli seçimi
+- Mobil uyumlu tasarım
 
 ## Çalıştırma
-Projeyi klonlayıp `index.html` dosyasını tarayıcıda açman yeterlidir. Derleme adımı gerekmez.
+Herhangi bir derleme gerekmez. `figur/index.html` dosyasını tarayıcıda açabilirsin.
 
-## Önemli
-Bu sürüm ön yüz prototipidir. Ürünler, fiyatlar ve puanlar örnektir. Gerçek satış için sunucu tarafı ürün/stok yönetimi, kullanıcı hesapları, sipariş API'si ve güvenli ödeme sağlayıcısı entegrasyonu gerekir. Bülten ve ödeme alanları şu anda demo davranışı gösterir.
+## GitHub Pages ile yayınlama
+Depoda `.github/workflows/pages.yml` iş akışı bulunur. GitHub deposunda **Settings → Pages → Build and deployment → Source** bölümünden **GitHub Actions** seçildiğinde, `main` dalına yapılan gönderimlerle statik site yayınlanır.
+
+Yayın adresi depo/hesap ayarlarına bağlıdır. Pages etkinleştirildikten ve dağıtım başarılı olduktan sonra Figürhane normalde `https://<kullanıcı-adı>.github.io/<depo-adı>/figur/` yolunda açılır.
+
+## Demo sınırları
+Ürün adları, açıklamaları ve fiyatları örnek katalog içeriğidir; gerçek stok, lisans veya satış ilanı olarak değerlendirilmemelidir. Sepet yalnızca bu tarayıcıda çalışır. Sipariş özeti ve özel figür talebi indirilebilir dosyalar üretir, işletmeye otomatik gönderim yapmaz. Çevrim içi ödeme, gerçek sipariş yönetimi, stok sistemi ve e-posta/form sunucusu henüz bağlı değildir. Yayına almadan önce işletme iletişim bilgilerini, gerçek ürün fotoğraflarını/fiyatlarını, lisans durumlarını, teslimat ve iade koşullarını ekle.
